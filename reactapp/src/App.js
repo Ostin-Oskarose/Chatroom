@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/navbar/ChatroomNavbar.js'
 
 export default class App extends Component {
     static displayName = App.name;
@@ -44,6 +46,7 @@ export default class App extends Component {
 
         return (
             <div>
+                <Navbar/>
                 <h1 id="tabelLabel" >Weather forecast</h1>
                 <p>This component demonstrates fetching data from the server.</p>
                 {contents}
